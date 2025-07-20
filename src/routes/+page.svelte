@@ -54,6 +54,10 @@
 	};
 </script>
 
+<svelte:head>
+	<title>The Dad Joke Factory</title>
+	<meta name="description" content="Make and rate dad jokes!" />
+</svelte:head>
 <div
 	class="absolute w-full h-full flex justify-center items-center font-display"
 	class:hidden={rating == ''}
