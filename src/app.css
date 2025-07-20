@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+	--font-display: 'Comic Relief', 'sans-serif';
+}
+
+html,
+body {
+	height: 100%;
+}
