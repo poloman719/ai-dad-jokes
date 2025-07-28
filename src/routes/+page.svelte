@@ -1,13 +1,14 @@
 <script>
 	import { GoogleGenAI } from '@google/genai';
+	import { PUBLIC_GEMINI_API_KEY } from '$env/static/public';
 	let generatingJoke = $state(false);
 	let jokes = $state([]);
 	let rating = $state('');
 	let modal = $state();
 
 	// The client gets the API key from the environment variable `GEMINI_API_KEY`.
-	console.log(process.env.GEMINI_API_KEY);
-	const ai = new GoogleGenAI({apiKey: process.env.GEMINI_API_KEY});
+	console.log(PUBLIC_GEMINI_API_KEY);
+	const ai = new GoogleGenAI({apiKey: PUBLIC_GEMINI_API_KEY});
 
 	async function generateJoke() {
 		generatingJoke = true;
